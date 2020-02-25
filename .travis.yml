@@ -7,3 +7,13 @@ before_install:
 
 script:
   - docker run -e CI=true ahmad/docker-react npm run test -- --coverage
+
+# Deploy:
+#    provider: elasticbreanstalk
+#    region:
+#    app:
+#    env:
+#    bucket_name:
+#    bucket_path:
+#    on:
+#      branch: master
